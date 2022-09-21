@@ -6,10 +6,10 @@ Fonts are separated by a & */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #97c7e2;
-  --secondary-color: #f5c884;
-  --accent1-color: #438db3;
-  --accent2-color: #f8bd37;
+  --primary-color: #396E94;
+  --secondary-color: #E4E6E1;
+  --accent1-color: #f8bd37;
+  --accent2-color: #438db3;
 
   /* change the values below to your chosen font(s) */
   --heading-font: Poppins;
