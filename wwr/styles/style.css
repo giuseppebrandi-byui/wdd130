@@ -2,6 +2,8 @@
 RAFTING AMERICA CSS RULES
 *************************/
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Poppins:wght@400;500&display=swap');
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
@@ -9,6 +11,10 @@ RAFTING AMERICA CSS RULES
 
 body {
     background-color: #ffffff;
+    font-family: 'Lora', Georgia, serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
 }
 
 #hero-msg h1,
@@ -29,16 +35,32 @@ header {
 
 .home-title {
     color: #396E94;
+    font-family: 'Poppins', Tahoma, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4 {
     color: #000000;
 }
 
+h2 {
+    margin: 0;
+}
+
+
 /* LOGO, ICONS & HERO IMAGE*/
 .logo,
 .icon {
     width: 80px;
+}
+
+.icon {
+    padding-top: 10px;
+}
+
+#logo_link {
+    padding-top: 5px;
 }
 
 #hero-img {
@@ -48,9 +70,10 @@ h4 {
 
 /* NAVIGATION */
 nav a {
+    text-decoration: none;
     color: #ffffff;
     text-align: center;
-    text-decoration: none;
+    padding: 35px;
 }
 
 nav a:hover {
@@ -64,7 +87,11 @@ nav a:hover {
 .join {
     background-color: #438db3;
     color: #ffffff;
-    text-decoration: none; 
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover,
@@ -74,20 +101,46 @@ nav a:hover {
 }
 
 
+/* CARDS SECTION */
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #f8bd37;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+
 /* MESSAGE SECTION */
 .msg {
     background-color: rgba(228,230,225,.5);
+    line-height: 1.5em;
+    padding: 35px;
 }
 
-.msg h2,
+.msg h2 {
+    font-family: 'Poppins', Tahoma, sans-serif;
+    color: #000000
+}
+
 .msg p {
     color: #000000;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 
 /* FOOTER */
 footer {
     background-color: #438db3;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 
 footer h3,
@@ -110,4 +163,8 @@ footer p {
 
 footer p a:hover {
     text-decoration: underline;
+}
+
+footer .social img {
+    padding-top: 15px;
 }
