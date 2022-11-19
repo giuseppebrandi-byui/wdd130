@@ -1,0 +1,389 @@
+/* Import font family Inter and Lato */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Lato:wght@400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333333;
+}
+
+/*************************/
+/* GENERAL COMPONENTS */
+/*************************/
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  color: #333333;
+  letter-spacing: -0.5px;
+  font-family: "Inter", sans-serif;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.4rem;
+}
+
+/* .subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  test-transform: uppercase;
+  margin-bottom: 1.6rem
+  letter-spacing: 0.75px
+} */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  background-color: #f59f00;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1.6rem 3.2rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #e9851a;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+/*************************/
+/* HEADER */
+/*************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e7f5ff;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.logo {
+  height: 5.2rem;
+}
+
+/*************************/
+/* HEADER */
+/*************************/
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 7.4rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 700;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #e9851a;
+}
+
+/*************************/
+/* HERO SECTION */
+/*************************/
+
+.section-hero {
+  background-color: #e7f5ff;
+  padding: 4.8rem 0 9.6rem 0;
+}
+
+.hero {
+  max-width: 140rem;
+  padding: 0 3.2rem;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+/*************************/
+/* SECTION HOW */
+/*************************/
+.section-z-pattern {
+  padding: 9.6rem 0 12.8rem 0;
+}
+
+.info-img {
+  width: 100%;
+}
+
+.info-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+/* .info-img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.section-strapline {
+  padding: 4.8rem 0 0 0;
+}
+
+.heading-strapline {
+  font-size: 3.6rem;
+  letter-spacing: 0.75px;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+
+/*************************/
+/* FOOTER */
+/*************************/
+.footer {
+  padding: 12.8rem 0 4.8rem 0;
+  border-top: 1px solid #eeeeee;
+}
+
+.grid--footer {
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+footer-logo {
+  display: block;
+  margin-bottom: 3.2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.copyright {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #767676;
+  text-align: center;
+  padding-top: 3.2rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 3.6rem;
+  font-family: "Inter", sans-serif;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-top: -0.5rem;
+}
+
+.address {
+  margin-bottom: 1rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+/*************************/
+/* OUR MISSION SECTION */
+/*************************/
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4.8rem;
+}
+
+.gallery-item img {
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+}
+
+/* CONTACT PAGE FORM */
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 600px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  border: 1px solid #333;
+  color: #000000;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 10em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: 0.3em;
+  background-color: #f59f00;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+}
