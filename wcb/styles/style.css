@@ -173,10 +173,23 @@ body {
 }
 
 /*************************/
-/* SECTION HOW */
+/* SECTION INFO */
 /*************************/
-.section-z-pattern {
+.section1-z-pattern,
+.section2-z-pattern {
+  padding: 9.6rem 0;
+}
+
+/* .section2-z-pattern {
+  padding: 3rem 0;
+} */
+
+.section3-z-pattern {
   padding: 9.6rem 0 12.8rem 0;
+}
+
+.section2-z-pattern {
+  background-color: #e3fafc;
 }
 
 .info-img {
