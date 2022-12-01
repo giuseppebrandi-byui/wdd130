@@ -24,7 +24,6 @@ body {
 /*************************/
 /* GENERAL COMPONENTS */
 /*************************/
-
 .heading-primary,
 .heading-secondary,
 .heading-tertiary {
@@ -105,7 +104,6 @@ body {
 /*************************/
 /* HEADER */
 /*************************/
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -146,7 +144,6 @@ body {
 /*************************/
 /* HERO SECTION */
 /*************************/
-
 .section-hero {
   background-color: #e7f5ff;
   padding: 4.8rem 0 9.6rem 0;
@@ -275,6 +272,7 @@ footer-logo {
 
 .address {
   margin-bottom: 1rem;
+  color: #767676;
 }
 
 .footer-nav {
@@ -312,78 +310,58 @@ footer-logo {
   width: 100%;
 }
 
+/*************************/
 /* CONTACT PAGE FORM */
-form {
-  /* Center the form on the page */
-  margin: 0 auto;
-  width: 600px;
-  /* Form outline */
-  padding: 1em;
+/*************************/
+.map {
   border: 1px solid #ccc;
-  margin: 0 auto;
-  border: 1px solid #333;
-  color: #000000;
-  font-size: 18px;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Full width */
+  font-family: "Lato", sans-serif;
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-form li + li {
-  margin-top: 1em;
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #f59f00;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker yello color */
+input[type="submit"]:hover {
+  background-color: #e9851a;
+  border: none;
 }
 
 label {
-  /* Uniform size & alignment */
-  display: inline-block;
-  width: 90px;
-  text-align: right;
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
 }
 
-input,
-textarea {
-  /* To make sure that all text fields have the same font settings
-     By default, textareas have a monospace font */
-  font: 1em sans-serif;
+/*************************/
+/* MEDIA QUERIES */
+/*************************/
 
-  /* Uniform text field size */
-  width: 300px;
-  box-sizing: border-box;
-
-  /* Match form field borders */
-  border: 1px solid #999;
-}
-
-input:focus,
-textarea:focus {
-  /* Additional highlight for focused elements */
-  border-color: #000;
-}
-
-textarea {
-  /* Align multiline text fields with their labels */
-  vertical-align: top;
-
-  /* Provide space to type some text */
-  height: 10em;
-}
-
-.button {
-  /* Align buttons with the text fields */
-  padding-left: 90px; /* same size as the label elements */
-}
-
-button {
-  /* This extra margin represent roughly the same space as the space
-     between the labels and their text fields */
-  margin-left: 0.3em;
-  background-color: #f59f00;
-  color: #000000;
-  padding: 10px 20px;
-  border: none;
-  font-size: 18px;
-  border-radius: 5px;
+@media screen and (max-width: 768px) {
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
 }
