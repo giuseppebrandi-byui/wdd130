@@ -1,7 +1,7 @@
 /* NAVIGATION */
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #438db3;
+  background-color: rgba(67, 141, 179);
   overflow: hidden;
 }
 
@@ -151,6 +151,11 @@
 .title {
   color: grey;
   font-size: 18px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin: 20px 0 30px 0;
 }
 
 button {
