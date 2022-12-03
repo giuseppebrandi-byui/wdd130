@@ -292,7 +292,7 @@ footer-logo {
 
 .footer-link:hover,
 .footer-link:active {
-  color: #555;
+  color: #555555;
 }
 
 /*************************/
@@ -314,7 +314,13 @@ footer-logo {
 /* CONTACT PAGE FORM */
 /*************************/
 .map {
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
+}
+
+.wrapper {
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  padding: 20px;
 }
 
 /* Style inputs with type="text", select elements and textareas */
@@ -332,6 +338,10 @@ textarea {
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
+textarea {
+  height: 100px;
+}
+
 /* Style the submit button with a specific background color etc */
 input[type="submit"] {
   background-color: #f59f00;
@@ -343,6 +353,7 @@ input[type="submit"] {
   border-radius: 4px;
   transition: all 0.3s;
   cursor: pointer;
+  margin-top: 20px;
 }
 
 /* When moving the mouse over the submit button, add a darker yello color */
